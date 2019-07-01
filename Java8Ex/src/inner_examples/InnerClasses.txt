@@ -1,0 +1,59 @@
+Inner class means one class which is a member of another class. 
+
+There are  four types of inner classes in java.
+1) Nested Inner class
+2) Method Local inner classes
+3) Anonymous inner classes
+4) Static nested classes
+-----------------------------------------
+Nested Inner class can access any private instance variable of outer class. 
+Like any other instance variable, we can have access modifier
+          private, protected, public and default modifier for a inner class.
+Like class, interface can also be nested and can have access specifiers.
+
+We can’t have static method in a nested inner class
+ because an inner class is implicitly associated with an object of its outer class
+ 
+class Outer { 
+   // Simple nested inner class 
+   class Inner { 
+      public void show() { 
+           System.out.println("In a nested class method"); 
+      } 
+   } 
+} 
+class Main { 
+   public static void main(String[] args) { 
+       Outer.Inner in = new Outer().new Inner(); 
+       in.show(); 
+   } 
+} 
+
+---------------------------------------------------
+
+Method Local inner classes
+
+Inner class can be declared within a method of an outer class.
+ In the   example, Inner is an inner class in outerMethod().
+
+class Outer { 
+	void outerMethod() { 
+		System.out.println("inside outerMethod"); 
+		// Inner class is local to outerMethod() 
+		class Inner { 
+			void innerMethod() { 
+				System.out.println("inside innerMethod"); 
+			} 
+		} 
+		Inner y = new Inner(); 
+		y.innerMethod(); 
+	} 
+} 
+class MethodDemo { 
+	public static void main(String[] args) { 
+		Outer x = new Outer(); 
+		x.outerMethod(); 
+	} 
+} 
+
+------------------------------------------------------------------------------

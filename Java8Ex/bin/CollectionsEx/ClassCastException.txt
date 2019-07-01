@@ -1,0 +1,26 @@
+
+
+When a reference is cast into wrong type or different type,
+     we get ClassCastException
+
+HashSet hm = new HashSet();
+
+		hm.add("One");
+		hm.add(new Car());
+
+		for (Object o : hm) {
+			String s = (String) o; // Downcast . TypeCast    // ClassCastException
+		}
+------------------------------------
+
+Class Loader must return the same class object reference 
+          for the same class name every time Class Loader is asked for it.
+  Otherwise the system will believe there are two different classes 
+  with the same name and will throw a ClassCastException 
+  whenever you assign an object reference between them. 
+  
+  
+  
+  
+  
+  

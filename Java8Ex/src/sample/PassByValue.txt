@@ -1,0 +1,57 @@
+
+When Java gives values to method parameters, Java copies values only.
+           
+           When we deal with primitive variables, 
+           the reference to original variable is not given.
+           If the method changes the parameter variable, original variable 
+           	whose value was copied, does not change. 
+           	This is known as pass by value.
+           	-----------------------------
+  	public static void calculate(int n)
+	{
+		n++;
+		System.out.println("n=" + n); //Prints 16
+		
+	}
+	
+	      int x = 15;
+		  calculate(x); // Java always passes parameters by value 
+		 							//when calling a method and passing parameter.
+		 System.out.println("x=" + x); // prints 15
+	------------------------------------------
+ 
+non-primitives (or objects of any class) are always references.
+When we pass object references to methods, 
+ Java copies the reference/address of object to method parameter.
+  So the parameter still points tp original object.
+    Meaning, if the method changes values of the object referred by parameter,
+     the object from calling method gets modified(Method uses same reference).
+     
+     Still it is pass by value only, because value from reference variable is copied.
+     Only that, the value was pointing to original object.
+     
+     Example:
+     public class MethodsExamples {
+
+	     public static void main(String[] args) {
+			MethodsExamples m = new MethodsExamples();
+			
+			Person p = new Person();
+			p.setName("Ramesh");
+			m.process(p);
+			System.out.println(p.getName()); // pass by value only. But address was given.
+										// Prints David.
+	     }
+     
+	     public void process(Person person) {
+			person.setName("David");			
+		 }    
+     
+     }
+
+
+
+
+
+
+

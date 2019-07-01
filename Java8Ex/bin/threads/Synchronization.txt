@@ -1,0 +1,39 @@
+Synchronization in java is the capability to control the access of multiple threads
+ to any shared resource (Object).
+
+When two or more threads are trying to access(modify) the same object, 
+Java needs to  synchronize.
+
+Any thread that wants to access the object
+ will get a monitor(lock) on the object
+ and another thread that wants to access the same object 
+ will wait for the first thread to release the monitor.
+ 
+ Once the first thread releases the monitor, 
+         second thread will acquire the monitor on the shared object and accesses it.
+
+
+
+-------------------------------
+----Java synchronized method:
+synchronized void printTable(int n){//synchronized method  
+   for(int i=1;i<=5;i++){  
+     System.out.println(n*i);        
+   }    
+ }  
+ ----------------------------------
+---- Synchronized block in java
+ 
+ Synchronized block can be used to perform synchronization on any specific part of a method.
+
+Suppose you have 50 lines of code in your method, 
+but you want to synchronize only 5 lines, you can use synchronized block.
+
+synchronized (object reference expression) {   
+  //code block   
+}  
+ --------------------------------------
+ Static synchronization
+If you make any static method as synchronized, 
+the lock will be on the class not on object.
+--------------------------------------------

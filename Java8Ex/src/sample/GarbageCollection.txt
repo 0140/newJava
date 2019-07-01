@@ -1,0 +1,41 @@
+In java, garbage means unreferenced objects.
+
+Garbage Collection is process of automatically reclaiming 
+the unused runtime memory used by resources or objects . 
+ Unused objects are those that are not referred by any reference variable.
+
+Garbage collection is performed by a daemon thread called Garbage Collector(GC). 
+This thread calls the finalize() method before object is garbage collected.
+
+Garbage Collector starts automatically. JVM manages garbage collector.
+------------------------------------------------------------
+
+An object be unreferenced:
+By nulling the reference
+By assigning a reference to another object.
+
+Car c = new Car();
+ c= null;
+ c= new Car():
+------------------------------------------------------------
+The finalize() method is invoked each time before the object is garbage collected. 
+This method can be used to perform cleanup processing. 
+This method is defined in Object class as:
+
+protected void finalize(){}  
+
+Finalize method needs to be overridden.
+
+Garbage collection is performed by a daemon thread called Garbage Collector(GC). 
+This thread calls the finalize() method before object is garbage collected.
+
+It starts automatically. JVM manages garbage collector.
+
+------------------------------------------------------------
+Can we force garbage collection?
+No.
+System.gc();
+We can ask JVM to start garbage collection using System.gc();. Still no guarantee that
+it runs immediately.
+
+Runtime.??

@@ -1,0 +1,10 @@
+Compile time polymorphism refers to overloading .
+In overloading,  which method will be invoked
+        is decided at compilation time only         
+        Based on the method name and the parameters being passed.
+        
+   Compiler can decide which method is matching.
+  
+   That   is why overloading is known as compile time polymorphism.
+   
+   Also known as Static binding.

@@ -1,0 +1,29 @@
+For every Primitive type in Java, there is corresponding Wrapper class.
+        Ex: Double, Boolean, Float, Long etc..
+    
+Sometimes we want to save Primitive type data in the form of Objects.
+Examples : HashMap Key. The Keys are objects. I want to save Year as Key.
+Year is a Integer number. But HashMap wants a Object as Key.
+We convert primitive type integer into Integer Object and save in HashMap as key.
+
+		Integer intWrapper = Integer.valueOf(i);
+		Double dblWrapper = Double.valueOf(d);
+    
+ 		HashMap<Integer, Double> map = new HashMap<Integer, Double>();
+	    map.put(new Integer(3), new Double(34.5)); // we are saving wrapper objects here
+	    
+	    map.put(9, 356.7); // Auto boxing -- primitive to object
+	    
+	    double d2= map.get(9); // Autounboxing   -- Object to primitive
+	    --------------------------------------------------
+	    long is primitive and Long is wrapper class that can save primitive data
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    

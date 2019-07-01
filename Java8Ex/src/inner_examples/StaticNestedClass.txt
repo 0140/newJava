@@ -1,0 +1,27 @@
+
+Static Nested Class
+A static inner class is a nested class
+       which is a static member of the outer class. 
+       It can be accessed without instantiating the outer class
+           OuterClass.InnerClass
+       
+        Just like static members, a static nested class does not 
+        have access to the instance variables and methods of the outer class. 
+
+class MyOuter {
+   static class Nested_Demo {
+   }
+}
+----------------------------
+public class Outer {
+   static class Nested_Demo {
+      public void show() {
+         System.out.println("This is my nested class");
+      }
+   }
+   
+   public static void main(String args[]) {
+      Outer.Nested_Demo nested = new Outer.Nested_Demo();	 
+      nested.show();
+   }
+}

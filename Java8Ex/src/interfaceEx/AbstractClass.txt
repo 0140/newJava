@@ -1,0 +1,119 @@
+
+28)	What is difference between abstract classes and interfaces?
+Abstract class	Interface
+1) Abstract class can have abstract and non-abstract methods.
+	Interface can have only abstract methods. Interface is 100% abstraction.
+	Since Java 8, it can have default and static methods also.
+ 	
+2) Abstract class doesn't support multiple inheritance.	
+Multiple inheritance is indirectly implemented via interfaces.
+A Java class can implement more than one interface.
+
+3) Abstract class can have constructors, final, non-final, static and non-static variables.	
+Interface can have only static and final variables.
+
+4) Abstract class can provide the implementation of interface.
+	Interface can't provide the implementation of abstract class.
+	
+5) The abstract keyword is used to declare abstract class.	
+ The interface keyword is used to declare interface.
+   
+ -----------------------------------------------------------------------------
+ 
+ What is abstract class?
+ 
+1) Abstraction is a concept in Java Object Oriented Programming that refers to Class
+  or method with abstract key word.  
+
+2)Abstraction is a Object oriented principle where a class can not be instantiated
+
+3) Abstract class can have partial implementation(concrete methods) 
+            and some abstract methods.
+            
+Purpose:   1) Some implementation(abstract method) is hidden to the client 
+			2) Sometimes we know part of implementation. 
+				We do not know part of implementation.
+				So we write abstract classes in that case.
+				interface 100% abstraction.
+			Ex: We have super class TestBase in automation testing.
+				We know how to initialize browser for all  test cases.
+				This goes in super abstract class method.
+				But each Test case class that extends super abstract TestBase class,
+				has special implementation for test case.
+				So this implementation part goes to sub class which is the test class.
+				-----------------------------------------------------
+				//TestSuiteBase t = new TestSuiteBase();
+		TestSuiteBase t = new SearchRetailTestCase();
+		t = new PaymentGatewayTestCase();
+		t.processTestCase(); // hiding business logic
+ --------------------------------------
+ 	 *  Sub class if not implementing all abstract methods, 
+		 *                     subclass also got to be abstract.
+		  *  Implement all methods.
+		 *  Or create another sub class that will implement all abstract methods.
+	----
+Abstract methods optional.. Keyword abstract is enough to make a class abstract.
+
+Abstract classes are extended by sub classes that implement the abstract methods.
+
+Can have constructors, Can have instance variables, Can have Implementing methods…
+ Not possible in Interfaces… Interface has no constructors, no instance variables
+       Interface can have static final variables(constants)
+       
+ How to implement???      
+ public abstract class AbstractEx { 
+ 	public abstract void process(); // optional
+ 
+ 
+ } 
+---------------------------------------------
+When abstract used: 
+If we have a situation when we know some part of implementation,
+ and we do not know some part of implementation, I use abstract class. 
+ 
+ex: super class for test base class in our project.
+ I do not know how test case runs for every test case..
+But I know loadBrowser.. closeBrowser some details.. so add these methods to super class
+Implementing the test method will be in sub class-- test case class.
+For every test case that I write, I extend the abstract class TestBase.
+
+Interface when?
+
+Interface is for 100% absraction. We do not know implementation.
+Loose coupling is the reason. We can choose implementation at runtime. 
+So we use interface interface for loose coupling.
+Ex: A hotel Chain -- HolidayInn chain of Hotels --
+         that permits reservations from different Channels 
+          like   Expedia, Travelocity..
+          
+          So they write ChannelReservation interface.
+          They implement the details in specific channel class
+              like ExpediaReservation, TravelocityReservation. implement ChannelReservation.
+
+ 	WebDriver driver = new ChromeDriver();	WebDriver interface.
+		
+----------
+Abstract example:
+In Test Framework, we first write a super abstract class for all test cases.
+That abstract class can have methods like loadBrowser, closeBrowser.
+
+Test method implementation can not be decided by super class.
+Every test case extends this abstract class. SO some methods are inherited.
+Every test method in the sub classs test case can be custom code for the test case.
+ 
+ Even a custom report can be implemented with abstract clss.
+ Super class can have methods for header and footers... Can provide implementation
+ Speical reports..
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

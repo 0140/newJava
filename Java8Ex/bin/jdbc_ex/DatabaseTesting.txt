@@ -1,0 +1,45 @@
+ Did you do database testing? 
+Yes.
+Whenever we enter data in web pages, we save data of  the page by submitting. 
+Data is saved in the database. We login into db and use SQL to verify whether 
+data is saved correctly or not. Check all the relevant tables for data modifications. 
+Known as data validation. . 
+I used Toad for Oracle for this.
+We write SQL queries for manual DB testing.
+
+We need to write JDBC code to read data from DB for automation testing.
+ Read data saved from DB using jdbc code and compare the data read with the expected data.
+
+
+
+-------------------------------------------
+Data structure testing – DB objects like tables, indexes are created or not
+Data validation – data saved correctly saved in tables
+Data Integrity – foreign keys not violated
+
+Oracle,   MongoDB 
+I wrote complex queries using groups, having, sub queries, joins.
+
+
+
+-------------------
+Yes
+I called them
+They perform backend processing
+   Like claims processing.
+      Find duplicate claims that are submitted.
+      This is one procedure.
+      This can cbe chcked on bakend
+      
+      Usually database specific operations we do using stored procedures..
+      
+      
+      
+
+
+
+
+
+
+
+

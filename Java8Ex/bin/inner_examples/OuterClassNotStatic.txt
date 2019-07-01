@@ -1,0 +1,15 @@
+Outer class need not be static:
+
+JVM does not instantiate a class to call main method.
+It alreay behaves like static.
+
+1)Every class is already common to all of its objects,
+ and there is no need to make it static to become available to all of its objects.
+ 
+2)  To access static members of a class, we use ClassName.member.
+
+ An outer class is part of a package.
+  We can directly access the class by   writing package_name.class_name
+   (similar to class_name.static_field_name). 
+So  , there is no need to do make static, that's already behaving like static by default.
+

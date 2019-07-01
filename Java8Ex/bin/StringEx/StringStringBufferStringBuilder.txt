@@ -1,0 +1,42 @@
+
+What is the difference between String, StringBufffer, StringBuilder?
+
+String is Immutable.. StringBuffer, StringBuilder are mutable..
+STring modification will create new string objects. This a slow operation.
+
+When we are manipulating a string, we need to use StringBufffer or 
+StringBuilder for faster operations.
+So StringBuffer and String Builder are faster compared to String. 
+ 
+-------------------------------------------------
+What is the difference between StringBuffer and StringBuilder?
+Both are mutable.
+
+StringBuffer is synchronized. StringBuilder is not synchronized.
+Therefore StringBuffer is slower compared to StringBuilder.
+
+ StringBuilder is not synchronized. Therefore faster compared to StringBuffer..
+ So, most of the situations, we use StringBuilder…   where multi threading is not a concern.
+
+StringBuffer sbuffer = new StringBuffer(); //Mutable //  Synchronized // slower
+		sbuffer.append("a")
+			.append("b")
+			.append("c")
+			.append("d")
+			.append("gh");
+		System.out.println("sbuffer:" +sbuffer);
+		
+		
+		StringBuilder sbuilder = new StringBuilder(); //Mutable --  Not Synchronized //Performs better -- faster
+		sbuilder.append("p")
+			.append("q")
+			.append("r")
+			.append("s");
+		System.out.println("sbuilder:" +sbuilder);
+		
+		
+		
+		
+		
+		
+		

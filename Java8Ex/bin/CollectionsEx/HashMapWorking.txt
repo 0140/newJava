@@ -1,0 +1,36 @@
+How does it work?
+
+HashMap works on the principle of hashing, we have put(key, value) 
+and get(key) method for storing and retrieving Objects from HashMap. 
+ 		 * hashCode is calculated for key.
+		 * That points to address in memory bucket where the key value pairs saved. 
+		   When hashcode is used, Saving and Retrieves faster.
+		  
+  So. For HashMap key object, we implement equals and hashCode method
+  					so that the object will be a fit for HashMap key.
+		
+-----------------------------------------------------------------------------
+When we pass Key and Value object  to put() method on Java HashMap, 
+HashMap implementation calls hashCode method on Key object 
+and applies returned hashcode  
+ to find a bucket location for storing Entry object, 
+ important point to remember is that HashMap in Java stores both key and value object
+  as Map.Entry in a bucket which is essential to understand the retrieving logic. 
+
+
+How do we retreve from HashMap?
+First calculate hashCode for key.
+hashCode of key is used to identify the bucket in which the  key value pair is saved.
+ after finding bucket location, we will call keys.equals() method to identify
+  a correct node in internal LinkedList and return associated value object for that key 
+  in Java HashMap. 
+  
+  
+  
+  
+  
+  
+  
+  
+
+ 

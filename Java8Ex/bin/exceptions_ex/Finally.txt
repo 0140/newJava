@@ -1,0 +1,44 @@
+Finally:  
+
+Finally is a block of code part of try catch finally.
+Finally block of code always runs whether
+ try block runs without exceptions or try block gives exception.
+ 
+Finally is used to close resources like Database Connections or File Pointers..
+If resources are not closed, they will be left in memory leading to OutOfMemoryError.
+Ex: Files left in memory. Not enough memory to hold many file.
+-----------------------------------
+If you use System.exit(..) finally will be running>?
+ No. If you do System.exit, finally block will not run.
+---------------------------------------------
+if I give return statement in a try block, does finally run?
+
+   Yes. When a method is going to execute return statement, 
+   first finally block runs and then only the method will return.
+   
+--Can I use finally block without catch blocks?
+    Yes. I can use without catch block. We need try block minimum.
+    We want to close resources even if exceptions are not handled.
+   ---------------------------------------------------
+   NO. One catch or finally needed for try block..
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

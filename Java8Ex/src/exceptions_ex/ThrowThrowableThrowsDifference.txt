@@ -1,0 +1,28 @@
+103)	Difference between throw, throws, Throwable
+
+Throw is used to throw exceptions when application logic itself needs to throw exception .
+  ex: throw new DiscountException(); They do not want to give discount to some customers.
+  
+Throws: part of the   method signature and is used to declare 
+     that the method can throw these exceptions
+     ex: public static void process(int i)  throws FileNotFoundException, IOException   
+                the method can throw the exceptions.  
+	
+Throwable:  Throwable is the super class of all exceptions in Java.
+
+When:
+throw is used when we want to stop execution flow. 
+Like when dicount is not given DiscountExcdeption stops flow.
+
+Throws is for propagation. Suppose I get FileNotFoundException. 
+We log the mesage there. Then rethrow company level exception like AnthemException
+that propagates to the controller.
+Controller can perform business logic for example, send ...
+------------------------------------------------------------------------
+public void calculatePrice() throws DiscountException, IOException {
+    if (newCustomer)
+    	throw new DiscountException(); // we dont give discount to new customers
+ 
+ }
+ 
+ I used throw and throws here.

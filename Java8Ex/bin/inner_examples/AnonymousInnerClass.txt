@@ -1,0 +1,50 @@
+
+
+Anonymous inner classes
+Anonymous inner classes are declared without any name at all. 
+
+An anonymous inner class is an inner class 
+           that is declared without using a class name at all
+ 
+ They are created in two ways.
+a) As subclass of specified type
+
+class Demo { 
+   void show() { 
+      System.out.println("From show method of super class"); 
+   } 
+} 
+class Example { 
+  
+   //  An anonymous class with Demo as base class 
+   static Demo d = new Demo() { 
+       void show() { 
+           super.show(); 
+           System.out.println("i am in Flavor1Demo class"); 
+       } 
+   }; 
+   public static void main(String[] args){ 
+       d.show(); 
+   } 
+}
+
+b)   As implementer of the specified interface
+
+class  DemoConcepts { 
+  
+    // An anonymous class that implements Hello interface 
+    static DemoInterface h = new DemoInterface() { 
+        public void show() { 
+            System.out.println("i am in anonymous class"); 
+        } 
+    }; 
+  
+    public static void main(String[] args) { 
+        h.show(); 
+    } 
+} 
+  
+interface DemoInterface { 
+    void show(); 
+} 
+

@@ -1,0 +1,15 @@
+
+How do we handle exceptions:
+ 
+  Two ways to handle exceptions..
+            Try catch blocks or method can throw exceptions.
+ 
+ Try catch blocks used to handle exceptions
+ 		when exception occurs, control goes to exception handler..
+        and the code in exception handler is executed..
+        Program execution continiues after try catch block..
+        
+ Second way to handle exceptions:
+       we can throw exceptions in the signature of the method.
+      public boolean checkAge(int age) throws NotAllowedToSwimException
+	

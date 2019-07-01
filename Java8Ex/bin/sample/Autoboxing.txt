@@ -1,0 +1,13 @@
+Autoboxing is a process by which primitive type 
+  is automatically encapsulated(boxed) into its equivalent type wrapper
+  
+     HashMap<Integer, Double> hashmap = .....
+     hashmap.put(new Integer(3), new Double(34.5)); // we are saving wrapper objects here
+	    
+	    hashmap.put(9, 356.7); // Auto boxing -- primitive to object
+	  ------------------------------------
+Auto-Unboxing is a process by which the value of an object
+       is automatically extracted from a type Wrapper class into promitive.
+       
+       	    double d2= hashmap.get(9); // Autounboxing   -- Object to primitive
+       

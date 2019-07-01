@@ -1,0 +1,9 @@
+Transient variable.. 
+
+  A transient variable is a variable that may not be serialized.
+   We use the transient keyword to indicate to the Java virtual machine 
+   that the indicated variable is not part of the persistent state of the object.
+   
+   When we serialize an object, transient variable is not serialized.
+   
+Private transient Connection con = null;

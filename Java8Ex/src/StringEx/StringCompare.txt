@@ -1,0 +1,22 @@
+How do you compare one string with another?
+
+We use compareTo method.
+The method returns Zero. Negative, positive
+If zero, both strings are of same position.
+If Negative, firstString comes first. Second string comes next.
+If Positive, Second string comes first. FirstString comes next.
+
+
+if (s5.compareTo(s6) == 0)
+		{
+			System.out.println("Strings same");
+
+		} else if (s5.compareTo(s6) < 0) 
+		{
+			System.out.println("s5 comes first.");
+
+		} else
+		{
+			System.out.println("s6 comes first..");
+
+		}

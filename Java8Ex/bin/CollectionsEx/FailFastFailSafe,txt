@@ -1,0 +1,23 @@
+
+Fail-Fast Iterators In Java :
+  When a collection is being iterated by collections framework classes,
+    if another thread modifies same collection,
+    first thread throws ConcurrentModificationException when accessing the collection.
+    This is Fail fast situation.
+   Ex: HashMap is fail fast.
+
+
+Fail-Fast iterators, returned by most of the collection types in collection framework,
+ doesn’t tolerate any structural modifications to a collection while iterating over it.
+  (Structural modifications means add, remove or updating an element in the collection) 
+  They throw ConcurrentModificationException if a collection is structurally modified 
+  while iteration is going on the collection. But, they don’t throw
+   any exceptions if the collection is modified by the iterator’s own methods
+ like remove().
+ ------------------------------------------------------
+ Fail Safe:
+ Fail-Safe iterators don’t throw any exceptions 
+ if the collection is modified while iterating over it. 
+ Because, they iterate on the clone of the collection not on the actual collection. 
+ 
+ Ex: Hashtable, Vector are fail safe.

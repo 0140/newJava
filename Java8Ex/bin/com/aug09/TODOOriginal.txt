@@ -1,0 +1,178 @@
+Prime, palindrome  ,anagram,  reverse integer
+  ,   static , recursion, reflection -- string
+Object super class, equals ==, hashcode  compareTo
+main method also
+Constructors
+This super diff
+wrapper
+Data Virtualization
+OAuth  BasicAuth
+ListIterator
+LinkedListArrayList difference
+Entry Exit criteria
+Design Patterns -- Where did you use?
+ConcurrentHashMap ?? APIs in automation...
+ What is collections?
+ Mutable examples
+this super diff
+IO API Buffered....
+  IO Stream API
+JUnit ..
+Mockito -- https://www.journaldev.com/21816/mockito-tutorial
+Callable Statement
+PreparedStatement
+Solid principles in Java --
+Innner classes
+
+while, do while, 
+break 
+continue 
+switch statements
+Scanner   Read ScannerEx.java
+Assignment: Read a number from command line. Calculate factorial of that number.
+
+passing arguments to java class
+
+Assignment: Given an array of numbers.. Write a loop to print the contents of the array.
+   Do not print the numbers if the number is more than 99.
+      Clue: Use a continue statement.
+      
+Write a simple method and call it.
+
+
+
+Operators
+Loops --for while continue break scanner simple methods
+Static non static
+final
+
+scanner
+
+
+Running from Command line
+Algorithms
+
+
+A method
+Parameters
+while
+do while
+
+continue break
+
+command line
+
+Switch
+
+write methods -- return type
+Access modifiers
+
+passing arguments to java class
+
+Jdbc cean, Prepared Statement
+Callable Statement
+-------------------------------------
+TReeMap TreeSet
+LinkedList
+Algorithmic qtns
+++
+
+
+Algorithmic examples -- bubble sort, recursion, some more
+Classes as Method parameters
+
+main method also
+Constructors
+Object OOPS 
+static inherited?
+
+Polymorphism..
+
+final
+
+equals ==
+algorithmic class
+
+String class -- 
+Collections..
+
+Abstract
+
+ArrayList diff
+VectorList diff
+HashTableMap diff
+new TreeSet(comparator)
+
+TreeMap
+Comparator
+Iterator enum diff
+LinkedList
+CountUniqueWordsInString
+
+
+FileReadCountUniqueWords
+Anagram_Hbo
+ 
+Exceptions
+Garbage Collection
+Recursion
+
+File Read and Count Words
+Threading
+jdbc
+Generics
+Reflection
+IO
+
+this super
+hashCode
+equals
+Enum
+
+Design Patterns
+passing arguments to java class
+Anagram_Hbo
+Reflection
+Recursion
+--------------------------
+Jenkins Pipeline, jobs involved..
+Groovy DSL for pipeline
+
+ API Query path, URL Path examples
+API Security
+API OAuth
+API Header attributes
+API Assertions like status code, fields in the response body, headers
+RestAssured What? Example Code
+VA1_Ragini_UHG_Feb15
+End Point examples
+JSON Why?
+
+Jenkins Slave - distributed testing
+
+Code coverage tools
+Code coverage reports
+
+BDD Why?
+ BDD Selenium Integration
+   BDD Runners
+  
+  API Assertions
+  What you need for API Testing, what you focus
+  Some JSON questions
+  Micro services
+ BDD API Integration
+cucumber challenges
+
+POM class and practical example
+POM Priority
+POM Lazy loading.
+POM PageFactory.init
+https://www.softwaretestingmaterial.com/page-object-model/  
+What is Page Factory:
+PageLoad strategy -- Yes, WebDriver by default uses page load strategy that waits for fetching resources, this explains the delay.
+
+JMeter correlation, Output metrics from JMeter, What monitoring tools...
+
+jira dashboard
+zephyr.. for test cases..

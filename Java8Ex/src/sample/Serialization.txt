@@ -1,0 +1,17 @@
+https://www.javatpoint.com/serialization-in-java
+
+Serialization   gives us byte stream of the object.  
+We can transfer the bytes on wire.. to another JVM or machine.
+If we want to save object in hard disk, then also we can serialize and save.
+
+Deserialization is the reverse of Seralization. 
+    That means Deserialization converts byte data read from data source into object.
+
+
+FileOutputStream fout=new FileOutputStream("f.txt");  
+  ObjectOutputStream out=new ObjectOutputStream(fout);  
+  
+  out.writeObject(objectReference);  
+
+  benefits: We can transfer objects on network. we convert into bytestream and transfer.
+  

@@ -1,0 +1,44 @@
+https://javaconceptoftheday.com/differences-between-enumeration-vs-iterator-in-java/
+https://www.javatpoint.com/q/5286/what-is-difference-iterator-and-enumeration?
+
+1) Enumeration is used when we use legacy collection classes like Vector, Hashtable, etc 
+Iteration is used with Collections framework classes like ArrayList, TreeSet..
+
+2) We can remove content of Collection using Iterator.remove().
+    Remove method is not present in Enumeration
+    
+3)  Fail-Fast Vs Fail-Safe
+Iterator is a fail-fast in nature.
+ i.e it throws ConcurrentModificationException if a collection is modified 
+ while iterating other than it’s own remove() method.
+ Ex: HashMap is fail fast.
+ 
+  Where as Enumeration is fail-safe in nature. 
+  It doesn’t throw any exceptions if a collection is modified while iterating.  
+  Because, enumeration creates its own copy before iterating.
+
+4)  Safe And Secure
+
+As Iterator is fail-fast in nature and doesn’t 
+allow modification of a collection by other threads while iterating,
+ it is considered as safe and secure than Enumeration.
+    --------------------------------------------
+    
+    Vector<String> lang = new Vector<String>();
+      lang.add("JAVA");
+        lang.add("JSP");
+        
+        Enumeration<String> en = null;
+              
+        en = lang.elements();
+        while(en.hasMoreElements()){
+            System.out.println(en.nextElement());
+        }
+        
+        --------------------------------------
+        while(itr.hasNext()){
+            if(removeElem.equals(itr.next())){
+                itr.remove();
+            }
+        }
+        -----------------------------------

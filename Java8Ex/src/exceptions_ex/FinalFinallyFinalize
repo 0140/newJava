@@ -1,0 +1,38 @@
+108)	Difference between final, finally, finalize
+
+Final variable, final class, final method.
+Final variable can not be reassigned, once assigned.
+Final method can not be overridden.
+Final class can not be extended. No subclass.
+
+
+Finally is part of try catch finally block.
+Finally block always runs before control is going out of try block.
+ Finally block runs even if try block is successful 
+    or try block generates some exception  and the catch block for the exception is executed.
+    
+In any case, finally block always runs before control is going out of try block.
+Finally is Used to close resources like close DB connections
+
+Finalize  method part of the Object class.
+ This can be overridden in a java class. 
+ This is called before Garbage collector collects or removes object from memory.
+  Finalize is used to Clean resources. 
+  ------------------------------ 
+Can we , make JVM to start Garbage Collector. 
+We can invoke System.gc(); No guarantee. 
+
+Objects will be garbage collected when no variable is referring the object
+ and when garbage collector is running 
+Garbage collector is a special system thread in Java run time
+ that reclaims unused objects. 
+ Meaning., objects not being referred will be removed from memory.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+

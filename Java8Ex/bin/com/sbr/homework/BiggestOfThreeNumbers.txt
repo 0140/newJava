@@ -1,0 +1,12 @@
+Three numbers x, y, z. Find biggest.
+
+   int temp = y;
+   if( x>y) {
+  		 temp = x;
+   } // we found maximum of x and y. It is in temp.
+		  
+  // Now comparing temp and z.
+  if ( z > temp) {
+        temp =z;
+  } // Temp has maximum now
+	

@@ -1,0 +1,47 @@
+1. Loop through an array in the reverse.
+
+Print contents of an array. If the value of any element is 99, do not print.
+
+Read values from command line/console and print them.
+
+Write couple of methods and call them.
+
+Write a method that takes array as input. Print the array contents and skip if value is 66.
+
+Calculate the sum of all numbers upto a given number using recursion.
+
+Write a program to find whether a given String is palindrome.
+
+We have set of students. Student name, grade.
+   Order the students based on name, grade. (if name is same, order by grade)
+   
+2. Create ArrayList. Populate objects. Loop through in 3 ways.
+
+3. Use Iterator to loop through a set of objects.
+
+
+
+4. Remove duplicates from a list
+
+5. Read a number from command line. Calculate factorial of that number.
+
+6. Given an array of numbers.. Write a loop to print the contents of the array.
+   Do not print the numbers if the number is more than 99.
+      Clue: Use a continue statement.
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+
+
+
+

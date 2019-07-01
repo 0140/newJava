@@ -1,0 +1,16 @@
+
+Multithreading in java is a process of executing two or more threads 
+     simultaneously to maximum utilization of CPU.
+     
+      Java Thread is a Sequence of execution. Lightweight process that executes some task.
+     --------------------
+     We can set different priorities to different Threads
+      but it doesn’t guarantee that higher priority thread will execute 
+      first than lower priority thread.
+       Thread scheduler is the part of Operating System implementation 
+       and when a Thread is started, 
+       it’s execution is controlled by Thread Scheduler and 
+       JVM doesn’t have any control on it’s execution.
+       
+       
+     

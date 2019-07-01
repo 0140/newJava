@@ -1,0 +1,86 @@
+
+ 1. we have 2 variables:
+     int a = 3;
+     int b = 8;
+     exchange the values in a and b without using third variable
+     
+ 2. write a  program to find factorial for any given number
+ 
+ 3. Write a program to find nth element in fibonacci series.
+ 
+ 4.  We have a number i.
+    When i is divisible by 3 only, then print "Fizz"
+    When i  is divisible by 5 only, then print "Buzz"
+    When i  is divisible by 5 and 3, then print "FizzBuzz"
+    
+ 5. Print for a given row number:
+     *
+     **
+     ***
+     ****
+     *****
+     
+ 6. read a value from command line and print
+ 
+ 7. What is result of:
+    int i = 10
+    System.out.println(i++ + ++i);
+    
+ 8. What is NullPointerException and when it comes?
+ 
+ 9. What is the difference between == and equals method
+ 
+ 10. What is printed?
+ 
+    System.out.println("1" + 2);
+    System.out.println("1" + 2 + 3);
+    System.out.println( 1  + 2 + "3");
+    System.out.println( 1  + "2" + 3 + 4);
+    
+ 11. What is printed and why is it printed so?   
+   Pass by value or pass by ref in java?
+ 
+ public class PassByValueExample {
+	
+	
+	public int process(int n)
+	{
+		n = n+2;
+		return n;
+	}
+	
+	public void process(City c)
+	{
+		 c.setName("Atlanta");
+		 //process(4);
+		 
+		 
+	}
+	
+
+	public static void main(String args[]) {
+		
+		 System.out.println("webdriver.chrome.driver");
+		 
+		 
+		 int loc = 10;
+		 PassByValueExample p = new PassByValueExample();
+		 int x = p.process(loc); // Pass by value
+		 
+		 System.out.println("loc:" + loc);
+		 
+		 City c1 = new City();
+		 c1.setName("Princeton");
+		 p.process(c1);
+		 System.out.println(c1.getName()); 
+    }
+}
+ 
+12. Count the number of 2s upto 25. 
+	Count every number 2 from 0 upto 25 whenever number 2 appears.
+		Ex: 1..12. Count is 2. (2 and 12 have)  -- code in Count2s.java
+		
+13. 
+		
+		
+    

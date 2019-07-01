@@ -1,0 +1,52 @@
+
+Java try catch block is used to enclose the code that can throw an exception.
+ Try block is used in a method.
+ 
+ Ex: FileNotFoundException. When file is not found, control goes to exception handler, 
+    we will probably send mail to production support team..
+    
+
+Try block is followed by either catch or finally block.
+------------------------------------
+ int[] arr = new int[4];
+ try
+        {
+            int i = arr[4];
+                 
+            // this statement will never execute as exception is raised by above statement
+            System.out.println("Inside try block");
+        }      catch(ArrayIndexOutOfBoundsException ex)
+        {
+            System.out.println("Exception caught in catch block");
+        }
+        finally
+        {
+            System.out.println("finally block executed");
+        }
+        ------------------------------------------------
+        Java Multi catch block
+If you have to perform different tasks at the occurrence of different Exceptions, 
+use java multi catch block.
+
+   Only one catch block runs. ex: FileNotFoundException.  Only this runs if file not there
+  .
+   
+------------------------------------------------
+
+Java Nested try block
+The try block within a try block is known as nested try block in java.
+
+we handle sub exceptions first. 
+   Ex: FileNotFoundException is handled first. Then I handle IOException.
+   
+   -----------------------
+   
+   Can we write only  finally block, without catch blocks?  Yes.
+   
+   
+   
+   
+   
+   
+
+

@@ -1,0 +1,12 @@
+Thread is a sequence of execution.
+Thread is basically a lightweight sub-process, a smallest unit of processing.
+
+Multithreading in java is a process of executing multiple threads simultaneously.
+
+
+Threads are independent,
+ if    exception occurs in one thread, 
+it doesn't affect other threads. Threads share  a common memory area.
+
+
+----------------------------------------------------------------------

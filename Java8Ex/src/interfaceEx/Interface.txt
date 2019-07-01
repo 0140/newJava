@@ -1,0 +1,71 @@
+27)	What is an Interfaceâ€¦
+Interface is a collection of abstract methods -- No implementation for the methods --
+No concrete code in Interface(No implementation.)
+Only static final variables possible in Interface. (No instance variables)
+
+Multiple inheritance can be implemented indirectly via Interfaces. 
+ Ex:  public class Amex implements CreditCrad, PaymentGateway   
+              -- extending two interfaces.
+
+Interfaces provide Loose coupling .
+------------------------------------------
+Why interfaces?? 
+1)Loose coupling ¦ When you declare type variable, you can choose Interface type.
+  But Implementation of interface can be chosen at runtime..
+   Any implementing Java class can be referred. 
+    Based on runtime need, Implementation can be changed¦.
+     Ex:CreditCard interface. Implementations Amex.java, Visa.java.. 
+Implementation is decided at runtime -- known as loose coupling..
+
+When business logic is running, 
+ex: my business is accepting credit cards, 
+during coding I do not know, whether I need to call Amex.validate() or Visa.validate()
+ and so on..  
+ but at run time I need to decide which class and method 
+ I will use based on what credit card, customer will  provide me.  
+ This is loose coupling. 
+
+2)Interface guarantees   the behaviour of the implementing class .
+  All the Methods from the interface will be there.
+
+3)Multiple Inheritance is indirectly implemented via interfaces.
+          Java does not support Multiple Inheritance directly.
+           public class Visa implements CreditCard, CashAdvance
+
+These are the three reasons why we need interfaces.
+  -------------------------------------------------------------
+28)	Give examples from your project on interface ..  
+ CreditCrad.java Interface. It has methods like validate.
+ 
+ Amex.java ¦ Visa.java ¦Implementations of CreditCard interface
+ 
+CreditCard.java has validate()  method but only abstract method. 
+ Sub classes like Visa.java, Amex.java have code(implementation) for CreditCard.java. 
+ Amex, Visa classes implement CreditCard interface.
+ 
+Ex: VideoStream.java  ïƒ  MobileVideoStreaming.java,  CableVideoStreaming.java
+----
+WebDriver driver = new GeckoDriver();
+Or
+WebDriver driver = new ChromeDriver();
+Here, WebDriver Is Interface and FirefoxDriver and ChromeDriver
+        are the class files implementing WebDriver Interface.
+----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+
+Java ListIterator
+
+Like Iterator, ListIterator is a Java Iterator,
+ which is used to iterate elements one-by-one from a List implemented object.
+
+It is a Bi-directional Iterator.
+It supports both Forward Direction (hasNext()) 
+		and Backward Direction (hasPrevious) iterations. 
+        List supports Forward Direction only.
+
+ Unlike Iterator, It supports all four operations: CRUD (CREATE, READ, UPDATE and DELETE).
+
+It has no current element; 
+its cursor position always lies between the element
+that would be returned by a call to previous() 
+and the element that would be returned by a call to next().
+
+
+List<String&gt names = new LinkedList<>();
+	names.add("Rams");
+	names.add("Posa");
+	names.add("Chinni");
+		
+	// Getting ListIterator
+	ListIterator<String> namesIterator = names.listIterator();
+	
+	// Traversing elements
+	while(namesIterator.hasNext()){
+	   System.out.println(namesIterator.next());			
+	}
+	
+	----------------------------------
+	ListIterator Bi-Directional Iteration Example
+	(We can traverse using hasNext() or hasPrevious())
+	
+	// Traversing elements
+		System.out.println("Backward Direction Iteration:");
+		while(listIterator.hasPrevious()){
+			System.out.println(listIterator.previous());			
+		}
+			----------------------------------
+		//INSERTION   
+        list.add(25);      
+        list.add("java");  
+        list.add(true);    
+
+    //RETRIEVAL USING LISTITERATOR
+        ListIterator listIterator = list.listIterator();
+        while ( listIterator.hasNext()) {
+            Object next = listIterator.next(); // Accessing Current Object
+            listIterator.set(23);              // Replacing the element with new element
+            System.out.print(next+ " ");
+        }
+        System.out.println("\nUpdate List : "+list);
+    }
+		
+		

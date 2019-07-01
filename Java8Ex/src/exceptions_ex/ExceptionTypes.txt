@@ -1,0 +1,34 @@
+Checked and unchecked exceptions
+
+ Checked exceptions: Exceptions that need to be handled at compile time
+        are known as Checked exceptions.
+ Ex: IOException, FileNotFoundException. If not handled, checkedExceptions give 
+ compilation time errors.
+
+Unchecked exceptions need not be handled in code.
+ But they can occur at runtime. Ex: ArithmeticException, NullPointerException. 
+ When Unchecked exceptions occur and we do not handle the exceptions, 
+          the program execution stops there and program throws stack trace.
+     These are programming errors and they should be fixed in the code.
+  
+ Unchecked exceptions = RuntimeExceptions(Subclasses of RuntimeException) + Errors
+ Very often a programming error such as a NullPointerException 
+         or an illegal argument is Unchecked exception.
+ -------------------------------------
+An Error is a subclass of Throwable that indicates serious problems
+              that a reasonable application should not try to catch. 
+			Most such errors are abnormal conditions.
+			Ex: OutOfMemoryError happens when system memory/RAm is not enough.
+			Of we open files and do not close them, 
+			   OutOfMemoryError condition will happen.
+------------------------------------
+The checked exceptions are those exceptions which are checked by the compiler 
+for the smooth execution of the program. 
+The compiler checks whether the program can handle the checked exception 
+or not. If the code is unable to handle the exception there occurs a compilation error.
+
+
+
+
+			   
+			   

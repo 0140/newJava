@@ -1,0 +1,119 @@
+oops
+
+java deals object --
+
+data behaviour
+-----------------------------
+class and object -- 
+class is type    blueprint
+
+object instance -- memory allocated , 
+	 values for data
+	  METHODS -- BEHAVIOUR
+----------------------------------------
+OOPS   encapsulation
+	inheritance
+	polymorphism
+	abstraction
+reusability (Isa, HasA), easy maintenance
+
+encapsulation -- 1)data and behavoiour packed together
+		2)hides data -- private var -- public methods --neat access (setters, getters)
+		public functions
+
+		Ex: Person -- name, DOB, Address ttributes, getName, getDOB are methods
+		Address -- addr1, addr2, city, state, zip, country
+
+		Insurance -- type(enum), Customer, Address, SSN, 
+			-- colllection of Ins 
+				-- auto
+					-- history(collection)   
+						getExperationData
+						increasePremium -- value increased, send a email, updates database, 
+ 
+				-- home
+				-- boat
+
+----------------------------------------------------------
+
+inheritance -- a class inherits members from super class
+		-- reusability
+
+		Vehicle -- type, model, year	
+			applyBrakes
+			blowHorn
+		Car extends Vehicle
+			vin, 
+		(Car IsA Vehicle -- )  (HasA -- Vehicle has model, contains relation)
+		
+		Provider -- type (individual, inst, dental)
+				name, DOB,
+				registration
+				NPID
+				getAddr
+				emergency -- Y
+				colllection -- servicesProvided
+				getAppointment()
+		IndProv -- 
+		InstProv extends Provider
+		Dental extends Provider
+--------------------------------------------------------------------------
+
+	Polymorphim -- poly -- multiple, morph -- form
+		-- same method name -- different behaviour
+		-- similar behaviour
+
+		Types:
+		-- overloading
+		-- overriding
+
+		-- overloading: same Method name, different parameters(either type or number)
+				either in same class or in sub class also
+
+			getCustomer(String ssn)
+			getCustomer(License license)
+			getCustomer(Customer customerId)
+			(compile time -- identifis at compile time only which method)
+			(static binding)
+
+		-- overriding -- sub class has a method with 
+						same name and parameters as in super class
+				only in sub class
+				(run time -- not possible to identify at compile time
+						var can point to any object -- of different class							super or sub class
+						at runtime only, which method invoked can be decided)
+
+				(dynamic binding)
+		want to implement different behaviour or different functionality
+----------------------------------------------------------------------------------
+-------------------------------------------------------------
+
+Abstraction --metod signature -- no implementation
+			-- delaration there
+			
+			
+Abstract -- hides behaviour --  abstract methods can be there 
+
+		abstract class name --
+		concept in java where we can not  instantiate class, sub classes can instantiate
+				abstract methods can be there
+		can provide part implementation
+				
+		Why?  wherever you need part both. -- part behaviour fixed(some impl) and 
+						you want to allow customization of some behaviour
+						 -- then use abstract class
+						 
+				Ex: Provider -- getValidation -- registration of provider and vlidating credentials
+							 -- different in institutionalProvider
+						 
+----------------------------------------------------------------------------------------
+
+Interface
+
+
+
+
+
+
+
+

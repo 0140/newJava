@@ -1,0 +1,23 @@
+The java.lang.Runtime.exec(String command) method 
+ executes the specified string command in a separate process. 
+ We can call an OS command this way. Ex: A batch program.
+ ----------------------------------
+ public class RuntimeDemo {
+
+   public static void main(String[] args) {
+      try {
+
+         // print a message
+         System.out.println("Executing notepad.exe");
+
+         // create a process and execute notepad.exe
+         Process process = Runtime.getRuntime().exec("notepad.exe");
+
+         // print another message
+         System.out.println("Notepad should now open.");
+
+      } catch (Exception ex) {
+         ex.printStackTrace();
+      }
+   }
+}

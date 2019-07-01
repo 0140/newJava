@@ -1,0 +1,38 @@
+------------------------------------------------------------------------------------------------------
+Does Java support Multiple Inheritance?
+No.
+Java does not support Multiple Inheritance.
+Multiple Inheritance is indirectly  implemented via Interfaces.
+A java class can implement more than one interface.
+  Ex: public class Visa implements CreditCard, CashAdvance {   }
+          where CreditCard, CashAdvance are interfaces.
+          
+ If a class extends more than one class 
+ and if a method with same signature is there in both super classes,          
+          there will be a dilemma which method to be inherited in sub class.
+ To avoid this situation, Java avoids multiple inheritance via Super Classes.
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

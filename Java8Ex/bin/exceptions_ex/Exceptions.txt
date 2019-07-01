@@ -1,0 +1,47 @@
+ 	What is exception?
+ 	 Exceptions are abnormal conditions.
+  When exceptions occur, normal flow of program is disturbed.
+   It would halt execution of program and would throw exception 
+    unless we handle exception. 
+    Ex: We are trying to read a file and the file is not there. 
+        This causes FileNotFoundException
+ ----------------------------   
+	Why exception to be handled?   
+ 
+ * If we do not handle exceptions, normal or required flow of the
+ * 		application will break  when the exception occurs.
+ * 		Even when exception occurs, business logic defines how the 
+ * 		system needs to behave. Ex: If input file is not there,
+ * 		production support team should get an email 		
+ *      with the necessary information.
+ *      We need to handle exceptions like this,
+ *       to maintain application logic or the business logic.
+ 
+ // Runtime means we need not 
+ 
+ 
+ 
+ -------------------------------------------------------------
+ How do we handle exceptions:
+ 
+  Two ways to handle exceptions..
+            Try catch blocks or method can throw exceptions.
+ 
+ Try catch blocks used to handle exceptions
+ 		when exception occurs, control goes to exception handler..
+        and the code in exception handler is executed..
+        Program execution continiues after try catch block..
+        
+ Second way to handle exceptions:
+       we can throw exceptions in the signature of the method.
+      public boolean checkAge(int age) throws NotAllowedToSwimException
+	
+
+	
+	
+	
+	
+	
+	
+	
+	

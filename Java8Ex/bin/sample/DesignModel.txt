@@ -1,0 +1,12 @@
+
+	 * Room.java   -- Super class that has general attributes  of rooms
+		 *      like height, width, length, Room Number, Address of Room
+		 *      
+		 * Sub Classes  like Desk, Cubicle, ConferenceRoom
+		 * 
+		 * 
+		 
+		 
+		 * 
+		 
+		 

@@ -1,0 +1,46 @@
+http://javahungry.blogspot.com/2015/03/difference-between-array-and-arraylist-in-java-example.html
+
+Array vs ArrayList in Java
+
+1)Array is a fixed length data structure 
+whereas ArrayList is a variable length Collection class. 
+We cannot change length of array once created in Java but ArrayList can be changed.
+Usually, ArrayList size increases by more than 50% 
+     after it is full and we try to add one more element..
+
+(when a ArrayList is declared and initialized using default constructor, 
+memory space for 10 elements will be created. 
+now, when i add 11 th element, what happens is
+ ArrayList create a new object with OldCapacity*3/2+1 = 10*3/2+1 =16)
+
+2) We cannot store primitives in ArrayList, it can only store objects.
+ But array can contain both primitives and objects in Java.
+  Since Java 5, primitives are automatically converted in objects 
+which is known as auto-boxing and saved into ArrayList.
+
+3)ArrayList is collections framework class. So Collections API can be used with ArrayList.
+    These API not available with Array.
+    
+4) We can use Iterator to loop on ArrayList. Not on Array.
+   Iterator returned by ArrayList is fail fast. (ConcurrentModificationException)
+   
+5) We can ensure type safety using ArraList Generics class.
+
+6)  Multi-dimensional :  Array can be multi dimensional , 
+while ArrayList is always single dimensional.
+
+Integer addarrayobject[][] = new Integer[3][2];
+addarrayobject[0][0]= new Integer(8);  
+
+ArrayList<ArrayList<String>> al = null;
+
+
+
+
+
+
+
+
+
+   
+   

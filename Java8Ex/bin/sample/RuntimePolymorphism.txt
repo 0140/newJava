@@ -1,0 +1,33 @@
+ Runtime polymorphism means the method that will be invoked is decided at runtime .
+ this is implemented via overriding. 
+ 
+ we can have a method in the subclass that will have same method name 
+ and same parameters. we can invoke the same  method name
+  using the reference variable. 
+  
+  we know in Java the reference variable can refer to an object of same type
+   or sub class type object
+    
+   now if we are calling overridden method using the reference variable which method 
+   should run? either the method from the superclass or the method from the subclass ?
+   
+   this is decided at runtime only based on  the object being referred. 
+             --this is known as runtime polymorphism.
+             Also known as Dynamic binding.
+            
+            Ex: CreditCard.validate method
+               Visa extends CreditCard
+               Amex extends CreditCard
+               
+               Which method called? Visa.CreditCard or Amex.CreditCard? Decided at runtime.
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               

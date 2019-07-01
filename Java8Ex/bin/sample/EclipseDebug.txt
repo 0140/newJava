@@ -1,0 +1,19 @@
+
+http://www.vogella.com/tutorials/EclipseDebugging/article.html#setting-breakpoints
+
+F6 steps over the call, i.e. it executes a method without stepping into it in the debugger.
+
+F5    the debugger steps into the associated code.
+
+  We use BreakPoints and SingleStepping in debugging.
+To define a breakpoint in   source code, 
+right-click in the left margin in the Java editor and select Toggle Breakpoint. 
+Alternatively we can double-click on this position.
+
+To debug  application, select a Java file with a main method. 
+Right-click on it and select Debug As  Java Application.
+
+To debug the program we need to define breakpoints.
+ Eclipse asks  if we want to switch to the Debug perspective once a stop point is reached.
+  Answer Yes in the corresponding dialog. Afterwards Eclipse opens Debug perspective.
+  

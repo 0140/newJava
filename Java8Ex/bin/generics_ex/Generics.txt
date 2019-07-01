@@ -1,0 +1,37 @@
+Generics  What is Generics. What is the advantage of Generics?
+
+Generic types are the types with parameters..
+ Generics are Parameterized types..  ex: ArrayList<Student>
+
+Advantages:
+1) 1) Type-safety : We can hold only a single type of objects in generics.
+        It does not allow us to store other objects in the generic class.
+2) At compilation time some errors can be detected 
+If we add wrong type objects to Generics classes, compilation errors will come.
+
+3)Typecasting can be avoided if Generic types are used. 
+      Ex: If non generics, Student  s = (Student) arrayList.get(0);
+           For Generic ArrayList, Student  s = arrayList.get(0);
+------------------------------------------------------------------------
+
+public class Comparator<Student> {
+
+    public int compare(Student s1, Student s2) {
+	}
+}
+--------------------
+ArrayList  studentlist = new ArrayList(); // Non generic
+studentlist.add(new Car()); // No errors
+
+Student  s = (Student) al.get(0); // ClassCastException will occur at runtime.
+-------------------------------------------------------
+
+ArrayList<Student> al = new ArrayList<Student>();
+
+Al.add(new Student())
+Al.add(new Student));
+Al.add(new Car()) // compilation error
+
+Student  s = al.get(0); // generic array list.
+
+Student  s = (Student) al.get(0); // Type casting needed in Non generics.

@@ -1,0 +1,17 @@
+Enumeration and Iterator are two interfaces in java.util package 
+    which are used to traverse over the elements of a Collection object.
+
+Iterator interface is introduced from JDK 1.2 where as
+      Enumeration interface is there from JDK 1.0.
+
+But using Iterator, we can also remove an element while traversing the Collection.
+       This is the one major difference between Enumeration and Iterator in java. 
+
+       ----------------------
+Fail-Fast Vs Fail-Safe
+
+Iterator is a fail-fast  .
+ i.e it throws ConcurrentModificationException if a collection is modified by other thread
+ while iterating.   
+ Where as Enumeration is fail-safe . 
+ It doesn’t throw any exceptions if a collection is modified while iterating.  

@@ -1,0 +1,61 @@
+
+access levels
+
+Methods dealing with ref types.
+
+
+if , for, while, do while
+break, continue
+     ex: prime numbers, fibonacci, factorial
+ Array -- method and array
+Some typical examples..
+
+inheritance
+final
+static
+
+Arrays, pass to methods
+
+oops principles -- Inheritance, polymorhism , 
+		overloading, over riding, encapsulation
+String coding
+
+
+collections
+interfaces
+abstract 
+exceptions
+  finally
+  custom exceptions
+  
+super 
+this
+pass by value
+
+Serializable
+transient
+volatile
+Reflection
+Design Patterns
+Java 8 New
+Interview examples
+-------------------
+
+  
+
+
+
+threads
+singleton ..
+------------
+Java 8 new
+ 
+ Java Reflection API
+JDBC..
+
+
+-------------------------
+
+https://www.hackerrank.com/challenges/java-factory
+
+

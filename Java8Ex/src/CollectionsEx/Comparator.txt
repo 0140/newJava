@@ -1,0 +1,55 @@
+Java Comparator interface
+
+Java Comparator interface is used to order the objects of user-defined class.
+
+This interface is found in java.util package
+ and contains 2 methods compare(Object obj1,Object obj2) and equals(Object element).
+
+We can sort the objects(elements) on the basis of any data member of the object,
+ for example rollno, name, age or anything else.
+
+compare() method
+public int compare(Object obj1,Object obj2): compares the first object with second object.
+
+Difference:
+In comparable, current object is compared to incoming parameter of cpmpareTo method.
+In comparator, we compare the two parameter objects of compare method.
+
+We can write custom comparators as per our need.
+When an object is implementing comparable inyterface, it is naturally orderable.
+------------------------------------------------------------------------------------
+
+
+@Override
+	/*
+	 * -1   0   +1
+	 * (non-Javadoc)
+	 * @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
+	 */
+	public int compare(Object o1, Object o2) {
+ 
+		if( !(o1 instanceof Student) || !(o2 instanceof Student))
+				{
+					throw new IllegalArgumentException
+									("Expecting Student Objrcts to compare");
+				}
+		
+		Student s1 = (Student) o1;
+		Student s2 = (Student) o2;
+		// descending order (ascending order would be:
+		// o1.getGrade()-o2.getGrade())
+		
+		int gradeDiff =  s1.getGrade() - s2.getGrade();
+		
+		if (gradeDiff != 0)
+		{
+			return gradeDiff;
+		} else
+		{
+			int nameComparison = s1.getName().compareTo(s2.getName());
+			return nameComparison;
+		}
+		
+		
+		 
+	}

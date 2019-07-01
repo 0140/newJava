@@ -1,0 +1,47 @@
+Immutable means unmodifiable or unchangeable.
+String is immutable and final in Java.
+Every modification in String creates a new String object.
+ For example, when we get the substring, we get a new String, 
+ when we convert uppercase String to lowercase, a new String is created. 
+
+ 
+Once string object is created 
+its data or state or content can't be changed 
+but a new string object is created if we try to change string..
+String objects are shared from a String pool. Reusable String objects. 
+So string made immutable. 
+ ------------------------------------------
+Immutable objects are particularly useful in concurrent applications.
+ Since they cannot change state, they cannot be corrupted by thread interference 
+ 
+
+-------------------------------------------------------
+Why Strings made immutable in java?
+http://www.programcreek.com/2013/04/why-string-is-immutable-in-java/
+
+1)	Strings are reusable and saved in StringPool.
+      If one user modifies string in the pool, 
+      other user gets a different string from the pool.So We can not reuse if modified.
+     So String is made immutable so that it can be reused from string pool.
+2)	String Needs to be Thread safe. So string made immutable.
+      If two threads are sharing same string, if we allow one thread to modify it,
+           other thread may get unwanted value. So string was made thread safe and immutable.
+
+3)	Security violation if modified.
+4)	 HashCode is used to compute the memory address in String pool.
+    where the string is  saved in the string pool. 
+    If string is not immutable, JVM would bring wrong string from pool when reading.
+     We need String to be immutable.
+5)	We need String to be immutable for other classes to work properly. 
+    Ex1:) HashSet collections class. Set stores unique values. No duplicates.
+            If existing string inside set is modified, that may violate set basic rule.
+            So String made immutable.
+ 
+-----------------------------------------
+
+
+
+
+
+
+

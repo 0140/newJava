@@ -1,0 +1,45 @@
+Difference between HashMap and Hashtable
+HashMap and Hashtable both are used to store data in key and value form.
+ Both are using hashing technique to store unique keys.
+
+But there are many differences between HashMap and Hashtable classes that are given below.
+---------------------------------------------------------
+HashMap	Hashtable
+1) HashMap is non synchronized. It is not-thread safe.
+ Hashtable is synchronized. It is thread-safe.
+ As Hashtable is synchronized, it is slower compared to HashMap.
+
+
+
+2) HashMap allows one null key and multiple null values.
+	Hashtable doesn't allow any null key or value.
+3) HashMap is a new class introduced in JDK 1.2 as part of Collections Framework.
+	Hashtable is a legacy class.
+	
+4) HashMap is fast.	Hashtable is slow.
+5) HashMap is traversed by Iterator.
+	Hashtable is traversed by Enumeration and Iterator.
+
+
+6) Iterator in HashMap is fail-fast.	
+    Enumeration in Hashtable is not fail-fast. (fail safe)
+
+-------------------------------------------------------
+// HashMap inherits AbstractMap class.	Hashtable inherits Dictionary class.
+7) We can make the HashMap as synchronized by calling this code
+Map m = Collections.synchronizedMap(hashMap);	Hashtable is internally synchronized 
+and can't be unsynchronized.
+
+Most of times I use HashMap. Because we do not need Synchronization.
+But when we need synchronization,
+
+
+
+
+
+
+
+
+
+
+

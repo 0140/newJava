@@ -1,0 +1,50 @@
+Collections are used to process multiple objects together.
+Collections framework has provided API to make the processing uniform.
+ 
+Set   (Collection of Unordered, Unique elements)
+  Set interface is an unordered collection  and  it won’t allow duplicate elements .
+  But it allows null elements  ie.. we can add null elements to Set implementations.
+  We cannot get elements  by  key or index .  
+List
+  List interface is a ordered collection and it allows duplicate , null elements .
+  We can get elements by index in List . Set has no Index.
+   Index is added in the same order in which elements are added.
+   Like Set , List also a not synchronized collection .
+   
+   List size is dynamic. But array size is fixed.
+
+Map
+  Map is a collection of  key, value pairs.
+ Key is Unique
+  Value can be duplicated.
+  It allows one null key, multiple null values.
+
+Map interface is a unordered collection ,
+             it allows duplicate values but not duplicate keys .
+             
+      HashMap is unordered. Not sorted.
+       TreeMap is sorted on Key. IN both, key is unique.
+       I saved types of insurance in Insurance Map..
+  -----------------------------
+I Used ArrayList, HashMap, TreeMap, HashSet.
+    LinkedList..
+     
+ We can use LinkedLsit to traverse. 
+ I use Iterator to loop through.
+ Yes. We can delete member of collection. Iterator can delete member.
+ 
+List<WebElement> linksOnPage = driver.findElements(By.tagName("a"));
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+-------------------------
+http://java2db.com/java-util/difference-between-set-list-and-map-in-java-collections-framework

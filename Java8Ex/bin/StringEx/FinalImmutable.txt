@@ -1,0 +1,23 @@
+https://www.geeksforgeeks.org/final-vs-immutability-java/
+
+
+
+class Geeks {
+    public static void main(String[] args)
+    {
+        final StringBuffer sb = new StringBuffer("Hello");
+ 
+        // Even though reference varibale s1 is final
+        // We can perform any changes
+        sb.append("GFG");
+ 
+        System.out.println(sb);
+ 
+        // Here we will get Compile time error
+        // Because reassignment is not possible for final variable
+        sb = new StringBuffer("Hello World");
+ 
+        System.out.println(sb);
+    }
+}
+

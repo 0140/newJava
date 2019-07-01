@@ -1,0 +1,31 @@
+There are two ways to handle exceptions in Java.
+
+We can implement try catch blocks to handle exceptions
+       or we can throw the exceptions in method definition using throws clause.
+       
+ Using Try catch blocks:
+ Try catch blocks surround  the code where exceptions can happen.
+We can have multiple catch blocks also.
+ Based on the exception, corresponding catch block will run.
+We handle specific exceptions first in try catch block.
+
+Using throws clause in method definition: 
+    A throws clause in method definition declares that the method can give exceptions.
+       If we use throws clause,
+        the caller of the method has to handle the exceptions.
+       
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       

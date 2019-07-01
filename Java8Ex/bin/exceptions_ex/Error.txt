@@ -1,0 +1,10 @@
+
+
+Errors  signal the end of   application as we know it. 
+It typically cannot be recovered from and should cause JVM to exit. 
+Errors are not caught except to possibly log
+ or display and appropriate message before exiting.
+
+Example: OutOfMemoryError - Not much   can be done as  program can no longer run.
+
+             he most applications should crash rather than try to handle the errors.

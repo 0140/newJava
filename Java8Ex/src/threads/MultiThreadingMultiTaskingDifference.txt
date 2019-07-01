@@ -1,0 +1,35 @@
+
+http://www.java67.com/2015/11/difference-between-multithreading-and-multitasking.html
+
+1) In multitasking, several programs are executed concurrently 
+e.g. Java compiler and a Java IDE like Netbeans or Eclipse, 
+
+In multi-threading multiple threads execute either same 
+         or different part of program multiple times at the same time.
+
+
+2) Multi-threading is more granular than multi-tasking. 
+In multi-tasking,  CPU switches between multiple programs
+      to complete their execution in real time, 
+      while in multi-threading CPU switches between multiple threads of the same program.
+       Remember, switching between multiple processes has more context switching cost 
+       than switching between multiple threads of the same program.
+
+3) Processes are heavyweight as compared to threads,
+    they require their own address space, 
+    which means multi-tasking is heavy compared to multithreading.
+    --------------------------------------------------------------------------
+     Inter-process communication is expensive and limited and context switching 
+     from one process to another is expensive and limited.  
+     See difference between a Process and a Thread to learn more.
+
+Read more: http://www.java67.com/2015/11/difference-between-multithreading-and-multitasking.html#ixzz5hrknoH7B
+
+
+
+
+
+
+
+
+

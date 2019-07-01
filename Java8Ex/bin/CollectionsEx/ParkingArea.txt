@@ -1,0 +1,15 @@
+
+ *   Parking Area 
+		 *   Park Car.
+		 *   
+		 *   I will use HashMap for the spaces in the area.
+		 *   The key is number of space.
+		 *      The value is parking space details 
+		            -- like position in the  area, occupied or not etc.
+		 *      
+		 *      So key is number.
+		 *      Value ParkingSpaceObject.
+		 *      Many attributes like address, ocupied boolean, charge per hour etc...
+		 *      
+		 *      One new class.  ParkingSpace.java
+		 *          It has attributes - address, charge, occupied..

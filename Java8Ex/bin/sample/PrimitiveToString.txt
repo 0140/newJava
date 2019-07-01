@@ -1,0 +1,14 @@
+double d = 23.4;
+		String s3= String.valueOf(d); // Primitive to string
+		System.out.println(s3);
+		//Character.toString('d');
+		
+		double d2 = new Double(s3).doubleValue(); // Integer to Double 
+													// String to primitive
+		System.out.println(d2);
+	---------------------------------------------------------
+	String s = String.valueOf(7); // primitive to string
+		 
+		int n = new Integer(s).intValue(); //String to primitive
+		double d = new Double(s).doubleValue(); //String to primitive
+		
